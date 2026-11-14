@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Shanghai Trip · 16–20 Dec 2026</title>
+  <meta name="theme-color" content="#b3202a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-top">
+        <span class="badge" id="syncBadge">💾 บันทึกในเครื่อง</span>
+        <button class="btn ghost" id="editToggle" aria-pressed="false">✏️ โหมดแก้ไข</button>
+      </div>
+      <p class="eyebrow">上海 · SHANGHAI</p>
+      <h1 id="tripTitle" data-edit="trip">Shanghai Trip</h1>
+      <p class="hero-sub"><span id="tripDates"></span> · <span id="tripTravelers"></span></p>
+      <div class="countdown" id="countdown"></div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs"></nav>
+
+  <main id="app">
+    <section id="view-overview" class="view"></section>
+    <section id="view-day" class="view"></section>
+    <section id="view-ideas" class="view"></section>
+    <section id="view-money" class="view"></section>
+    <section id="view-tips" class="view"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-actions">
+      <button class="btn small" id="exportBtn">⬇️ Export ข้อมูล (JSON)</button>
+      <label class="btn small">⬆️ Import<input type="file" id="importFile" accept="application/json" hidden /></label>
+      <button class="btn small danger-outline" id="resetBtn">↺ รีเซ็ตเป็นข้อมูลเริ่มต้น</button>
+    </div>
+    <p class="muted">ข้อมูลแปลงจาก “Shanghai 11-15 Mar 26.xlsx” · เวลาเที่ยวบินอ้างอิงตารางบินปกติ โปรดตรวจสอบกับสายการบินอีกครั้ง</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <h3 id="modalTitle">แก้ไข</h3>
+        <button class="icon-btn" data-close aria-label="ปิด">✕</button>
+      </div>
+      <form id="modalForm"></form>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

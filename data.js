@@ -1,0 +1,793 @@
+// ข้อมูลเริ่มต้นของทริป (สร้างจาก Shanghai 11-15 Mar 26.xlsx)
+// การแก้ไขผ่านเว็บจะถูกบันทึกใน localStorage ของเบราว์เซอร์
+window.DEFAULT_TRIP = {
+ "version": 1,
+ "trip": {
+  "title": "Shanghai Trip 2026",
+  "start": "2026-12-16",
+  "end": "2026-12-20",
+  "travelers": "บี · จูน · พั้น · เจต",
+  "rate": 4.6
+ },
+ "hotel": {
+  "name": "โรงแรมเว่ยถิง อาร์ (ถนนคนเดินหนานจิง สถานีจัตุรัสประชาชน)",
+  "area": "唯庭R酒店(南京路步行街人民广场站店) · ใกล้สถานี People's Square (Metro สาย 1/2/8) · ติดถนนคนเดินหนานจิง",
+  "checkin": "2026-12-16",
+  "checkout": "2026-12-20",
+  "amap": "",
+  "note": "📍 ให้คนขับ Didi/แท็กซี่ดูชื่อจีน: 唯庭R酒店(南京路步行街人民广场站店)"
+ },
+ "flights": [
+  {
+   "id": "f1",
+   "dir": "ขาไป",
+   "no": "FM842",
+   "airline": "Shanghai Airlines",
+   "date": "2026-12-16",
+   "from": "BKK",
+   "fromName": "กรุงเทพฯ สุวรรณภูมิ",
+   "dep": "10:45",
+   "to": "PVG",
+   "toName": "เซี่ยงไฮ้ ผูตง T1",
+   "arr": "15:55",
+   "note": ""
+  },
+  {
+   "id": "f2",
+   "dir": "ขากลับ",
+   "no": "MU547",
+   "airline": "China Eastern Airlines",
+   "date": "2026-12-20",
+   "from": "PVG",
+   "fromName": "เซี่ยงไฮ้ ผูตง T1",
+   "dep": "21:10",
+   "to": "BKK",
+   "toName": "กรุงเทพฯ สุวรรณภูมิ",
+   "arr": "00:55 (+1)",
+   "note": ""
+  }
+ ],
+ "days": [
+  {
+   "id": "d1",
+   "title": "มาถึงเซี่ยงไฮ้ · ถนนหนานจิง",
+   "items": [
+    {
+     "id": "i55",
+     "time": "10:45",
+     "title": "✈️ ออกเดินทางจากสุวรรณภูมิ (FM842)",
+     "note": "ควรถึงสนามบินอย่างน้อย 2-3 ชม. ก่อนเครื่องออก (ประมาณ 07:45)\n*** อย่าลืมกรอกใบ ตม. ออนไลน์ล่วงหน้า 3-7 วัน + ติดตั้ง eSIM ตั้งแต่ที่ไทย",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "素万那普国际机场"
+    },
+    {
+     "id": "i56",
+     "time": "15:55",
+     "title": "🛬 ถึงสนามบินผูตง (PVG)",
+     "note": "ผ่าน ตม. + รับกระเป๋า เผื่อเวลาประมาณ 1 ชม.\n*** Activate eSIM เมื่อถึงจีน",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "浦东国际机场T1航站楼"
+    },
+    {
+     "id": "i57",
+     "time": "17:00",
+     "title": "เดินทางเข้าเมือง (Maglev + Metro สาย 2)",
+     "note": "🚄 Maglev: สนามบินผูตง → สถานี Longyang Road (หลงหยาง) ~8 นาที\n- ซื้อตั๋วที่ห้องขายตั๋ว โชว์ Boarding pass ได้ส่วนลด (ปกติ 50¥ → 40¥)\n🚇 Metro: ที่ Longyang Road เดินตามป้ายไปขึ้น สาย 2 (สีเขียว) ทิศทาง East Xujing (徐泾东)\n- นั่งยาวไม่ต้องเปลี่ยนสาย 7 สถานี (~20 นาที) ลงที่สถานี People's Square (人民广场)\n🚶 ออกทางออกฝั่งถนนคนเดินหนานจิง (Nanjing Rd Pedestrian St.) แล้วเดินไปโรงแรม\n*** ทางออกที่ใกล้ที่สุดให้เช็คใน Amap อีกครั้ง โดยค้นหา 唯庭R酒店(南京路步行街人民广场站店)\n⏱ รวมประมาณ 45-60 นาที · ค่าเมโทร ~5¥ · Maglev เที่ยวสุดท้ายประมาณ 21:40\n💡 ทางเลือก: นั่ง Didi จากสนามบินตรงมาโรงแรม ~45-60 นาที ประมาณ 150-200¥/คัน",
+     "amap": "",
+     "tiktok": "https://vt.tiktok.com/ZSmMsmUgu/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "浦东国际机场磁浮站"
+    },
+    {
+     "id": "i2",
+     "time": "18:00",
+     "title": "เช็คอิน โรงแรมเว่ยถิง อาร์ (ถนนคนเดินหนานจิง สถานีจัตุรัสประชาชน)",
+     "note": "เช็คอิน เก็บกระเป๋า พักผ่อนแป๊บนึง",
+     "amap": "",
+     "tiktok": "https://vt.tiktok.com/ZSmMscVdd/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "唯庭R酒店(南京路步行街人民广场站店)"
+    },
+    {
+     "id": "i5",
+     "time": "19:00",
+     "title": "เดินเล่น ถนนหนานจิง (ช่วงค่ำ ไฟสวย)",
+     "note": "🚶‍♂️ ถนนคนเดินอยู่ติดโรงแรม เดินออกมาได้เลย\n*** east nanjing จะเป็นถนนคนเดิน\n*** west nanjing เป็นพวกร้านแบรนหรู\n🚶‍♂️เดินเท้าจากวัด jing'an ได้\n- Miniso Land\n- Pop mart\n- Toptoy\n- White rabbit (ลูกอม/นม ตรากระต่าย)\n📍เซี่ยงไฮ้นิวเวิล + Nut fun land  + Sanrio shop (ชั้น4)\n*** ถ้าเดินถึง people's suqare จะมีร้าน Hotmax",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "南京路步行街"
+    },
+    {
+     "id": "i6",
+     "time": "20:00",
+     "title": "แวะกินขนมร้าน Butterful & creamorous",
+     "note": "ร้านอยู่ตรง West Nanjing station exit 4",
+     "amap": "https://surl.amap.com/dr58saR9BA",
+     "tiktok": "https://www.tiktok.com/@larkpuapaichim/video/7601146100807994632?q=Butterful%20%26%20creamorous&t=1771169275623",
+     "extraLinks": [],
+     "done": false,
+     "cn": "Butterful&Creamorous黄油与面包(南京西路店)"
+    },
+    {
+     "id": "i10",
+     "time": "20:30",
+     "title": "กินข้าวเย็น Xie Sanbao",
+     "note": "📍พิกัด Nanjing West Road Station exit1\n🍜เมนูที่ควรกิน\n- บะหมี่มันปู/ข้าวราดมันปู (แบ่งกิน เพราะเลี่ยน)ชาม 99¥\n- ข้าวมันปู+กุ้งล้อบสเตอร์ 118¥\n-เสี่ยวหลงเปาปู",
+     "amap": "https://surl.amap.com/jVp1uyO152q5",
+     "tiktok": "https://vt.tiktok.com/ZSmCdSK5a/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "蟹三宝(南京西路店)"
+    },
+    {
+     "id": "i58",
+     "time": "22:00",
+     "title": "กลับ รร ไปนอนจ้า",
+     "note": "พรุ่งนี้ต้องตื่นตี 5 ไป Disneyland!",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "唯庭R酒店(南京路步行街人民广场站店)"
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "title": "North Bund · Lujiazui · หอไข่มุก",
+   "items": [
+    {
+     "id": "i18",
+     "time": "07:30",
+     "title": "กินเครปไข่ (ร้านอยู่แถวโรงแรมเดิม Xinzha Rd)",
+     "note": "อาหารเช้า สไตล์ local ของจีน\n***ร้านเปิด 5:30 - 13:00\n🚕 ร้านอยู่แถวสถานี Xinzha Rd (ห่างจาก รร ใหม่ 1 สถานี สาย 1) หรือหาร้านเครปไข่แถวที่พักแทนได้\n😋แนะนำเซท F คือใส่ทุกอย่างในร้าน อร่อยสุด",
+     "amap": "https://surl.amap.com/fdqmYOW1q6Bi",
+     "tiktok": "https://vt.tiktok.com/ZSmqvhuyJ/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "山东杂粮煎饼(新闸路店)"
+    },
+    {
+     "id": "i19",
+     "time": "",
+     "title": "North Bund Greenland",
+     "note": "เป็นสวนสาธารณะที่อยู่ริมแม่น้ำ\n***คนน่าจะเยอะไปเช้าๆก็ดี\n📸 ไข่สีเงิน",
+     "amap": "https://surl.amap.com/aa17o9kT6eo",
+     "tiktok": "https://vt.tiktok.com/ZSmBGsDGX/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "北外滩滨江绿地"
+    },
+    {
+     "id": "i20",
+     "time": "",
+     "title": "Hongkou gang",
+     "note": "สะพานข้ามคลอง หงโข่ง เดินจาก North bund greenland มาได้เลย",
+     "amap": "https://surl.amap.com/dQiWSy1i3BB",
+     "tiktok": "https://vt.tiktok.com/ZSmBGYQkK/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "虹口港"
+    },
+    {
+     "id": "i21",
+     "time": "",
+     "title": "Rei flower coffee",
+     "note": "คาเฟ่ริมน้ำวิวหอไข่มุก\n⏰ร้านเปิด 10:30 - 01:00\n***อาหารและน้ำราคาแรงกว่าคาเฟ่อื่น",
+     "amap": "https://surl.amap.com/1QjyDdAl7dlK",
+     "tiktok": "https://www.tiktok.com/@numfon.rainy/video/7447436091768065300?_r=1&_t=ZS-93yKL8CgvQr",
+     "extraLinks": [],
+     "done": false,
+     "cn": "REI FLOWER COFFEE BAR"
+    },
+    {
+     "id": "i22",
+     "time": "",
+     "title": "Shanghai postal museum",
+     "note": "🚶‍♂️เดินจาก Rui flower coffee แค่2นาที\n📸 ไฮไลท์มีแค่ถ่ายรูปที่กรอบประตูอันนี้แล้วเห็นหอไข่มุกแค่นี้เลยจ้า ถ่ายเสร็จก็ไปกันต่อเถ้อะ",
+     "amap": "https://surl.amap.com/2YFzhrBD15fqV",
+     "tiktok": "https://www.tiktok.com/@llllittlebear/video/7484511037828369672?q=qingren%20flower%20sight%20shanghai&t=1771254489544",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海邮政博物馆"
+    },
+    {
+     "id": "i23",
+     "time": "",
+     "title": "Peninsular",
+     "note": "🚶‍♂️เดินจาก Postal museam ไป 650m (11min)",
+     "amap": "https://surl.amap.com/3Bn7xYGBz2yS",
+     "tiktok": "https://vt.tiktok.com/ZSu89jn1M/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海半岛酒店"
+    },
+    {
+     "id": "i24",
+     "time": "",
+     "title": "Rou Rou Dami",
+     "note": "📍Raffles city ชั้น6 walkin เข้าไปได้เลย\n***ร้านเป็นที่นั่งแบบเคาเตอร์บาร์\n***ในเซทจะมีข้าว+ซุป+บล้อคโคลี่ ไม่อั้น\n🍔เมนูเด็ดคืออันที่ใส่ชีส",
+     "amap": "https://surl.amap.com/4032NhPHF6fE",
+     "tiktok": "https://vt.tiktok.com/ZSm4Hrbr6/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "肉肉大米(来福士广场店)"
+    },
+    {
+     "id": "i25",
+     "time": "",
+     "title": "Shanghai Natural History Museum",
+     "note": "🎟️ ค่าเข้าคนละ 30¥ ⏰เปิด 09:00 ขายตั๋วถึงแค่ 16:00",
+     "amap": "https://surl.amap.com/1zSFCT6hq6gJ",
+     "tiktok": "https://vt.tiktok.com/ZSmqTWWBs/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海自然博物馆"
+    },
+    {
+     "id": "i26",
+     "time": "",
+     "title": "1000 trees",
+     "note": "ข้างในเป็นห้างกับร้านอาหาร 📸 ไฮไลท์คือมุมต้นไม้1000ต้น ⏰ ควรไปช่วง3-4โมง",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "天安千树"
+    },
+    {
+     "id": "i27",
+     "time": "",
+     "title": "Long time ago สาขา 818 plaza",
+     "note": "ของย่างเสียบไม้\n🍽️ ที่เด็ดคือเนื้อแกะ\n📋 วิธีจอง https://vt.tiktok.com/ZSmgemkHu/\n***น่าจะต้ิงกดจองคิวตั้งแต่ที่ natural museam ถ้าคิวน้อยค่อยไปกดตอน 1000 trees ก็ได้\n*** พกคสอ ไปด้วยนะจ้ะ น่าจะต้องแต่งหน้าใหม่นะ55555 เพราะโดนแปะคูฟีเวอ",
+     "amap": "https://surl.amap.com/2Co9dkO5lo",
+     "tiktok": "https://vt.tiktok.com/ZSmBvw8N4/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "很久以前羊肉串(818广场店)"
+    },
+    {
+     "id": "i28",
+     "time": "",
+     "title": "จุดถ่ายรูป IFC Mall",
+     "note": "📍didi ปักหมุดลง IFC mall (Northeast gate)\n📍กรณีไปรฟฟ Luijiazui subway Exit 6 (อ่านว่า ลู่-เจีย-จุ่ย)\n⏰ ตึกที่จะต้องถ่ายรูปคู่ด้วยเปิดไฟ6โมง ปิดไฟ4ทุ่ม กรณีอากาศหนาวปิด3ทุ่ม",
+     "amap": "https://surl.amap.com/jkUKdzI1qajU",
+     "tiktok": "https://vt.tiktok.com/ZSmW27R7R/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海国金中心商场(东北门)"
+    },
+    {
+     "id": "i29",
+     "time": "",
+     "title": "แวะ disney store",
+     "note": "🚶‍♂️อยู่ตรงวงเวียนหอไข่มุก\n*** ราคาเท่ากับที่ขายในดิสนีย์แลนด์ แต่ว่าของไม่เหมือนกัน\n⏰10:00 - 22:00",
+     "amap": "https://surl.amap.com/4Or0uLq9A27t",
+     "tiktok": "https://vt.tiktok.com/ZSmWjv1Su/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "迪士尼旗舰店(陆家嘴店)"
+    },
+    {
+     "id": "i30",
+     "time": "",
+     "title": "Busy for you",
+     "note": "ร้านขนมของฝากราคาถูก ขนมเยอะส่วนมากคนซื้อขนมที่นี่\n🍡มีพุทราชีส",
+     "amap": "https://surl.amap.com/2pdmL3p3MgbF",
+     "tiktok": "https://vt.tiktok.com/ZSmWMNvB6/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "零食很忙"
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "title": "Shanghai Disneyland 🏰",
+   "items": [
+    {
+     "id": "i12",
+     "time": "05:30",
+     "title": "ออกจาก รร.",
+     "note": "",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "唯庭R酒店(南京路步行街人民广场站店)"
+    },
+    {
+     "id": "i13",
+     "time": "06:30",
+     "title": "ถึง Disneyland",
+     "note": "ถึงตอน 6:30 แล้วเข้าได้ตอน 7:00\nเดินทางโดยนั่ง Didi\n***ปักหมุดลงที่ Exit 3, Disneyland station (ภาษาจีนคือ 迪士尼地铁站3号入口)\n- ถ้าเดินทางนี้จะถึงประตูทางเข้าปกติก่อน โดยเราจะต้องเดินเลยไปอีกนิดนึงเพื่อเข้าที่ประตู early entry อยู่ใกล้กับ Shop Disney world\n- เครื่องหัวแนะนำให้ซื้อตั้งแต่ที่ร้านทางเข้าหน้า park\n- พกอาหาร/ขนม/น้ำ เข้ามากินได้\n-16:00 คือแสงหมดแล้ว ต้องรีบถ่ายรูป ช่วงบ่าย 2-3 คือแสงกำลังดี\n- กรณีที่กลับ รร ด้วยการเรียก Didi สามารถเดินมาที่จุดที่ลงตอนเช้าเเล้วปักหมุดเรียกรถที่ตรงนั้นได้เลย รอรถไม่นาน คนเยอะแต่ไม่ได้วุ่นวาย",
+     "amap": "https://surl.amap.com/iIfc89km2qq",
+     "tiktok": "https://vt.tiktok.com/ZSmMWcP7a/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "迪士尼地铁站3号口"
+    },
+    {
+     "id": "i14",
+     "time": "11:00",
+     "title": "กินข้าวเที่ยงที่ร้าน Sichuan Cuisine (เสฉวน คูซีน)\n[Xiang Zi Kuan]",
+     "note": "ร้านอยู่ที่โซน Disney Town นะจ้ะ\n***สิ่งที่ต้องสั่ง\n- ต้มปลาผัดกาดดอง\n-หมูผัดพริกหยวก\n-ไก่ผัดพริก",
+     "amap": "",
+     "tiktok": "https://vt.tiktok.com/ZSmMtLndj/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "巷子宽·四川小馆(迪士尼小镇店)"
+    },
+    {
+     "id": "i15",
+     "time": "13:15",
+     "title": "เดินไปจองที่ดูพาเหรด",
+     "note": "- พาเหรดรอบ 15:45 (นั่งรอกลางแจ้งโปรดเตรียมร่ม)\n-พาเหรดเดินยาวมากเดี๋ยวดูอีกทีว่าเราไหรอตรงไหนดี อันไหนใกล้กับจุดที่เราอยู่ปจบ ที่สุด",
+     "amap": "",
+     "tiktok": "https://vt.tiktok.com/ZSmM7TDJs/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海迪士尼乐园"
+    },
+    {
+     "id": "i16",
+     "time": "19:30",
+     "title": "เดินไปจองที่ดูพลุ",
+     "note": "*** พลุมีรอบ 20:00 กับ 21:15 แต่กูว่าเราดู2ทุ่มเถอะ น่าจะยมมากล้ะรีบดูรีบกลับนะน้องนะ\n- ใน ตต บอกว่าตำแหน่งที่ดีที่สุด จะเป็นบริเวณขอบรอบรั้วริมน้ำ ทางด้านหน้า ตามแนวทางเดิน Gardens of imagination ได้วิวหน้าปราสาทเลยจ้า",
+     "amap": "",
+     "tiktok": "https://vt.tiktok.com/ZSmMcFamT/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海迪士尼乐园 奇想花园"
+    },
+    {
+     "id": "i17",
+     "time": "",
+     "title": "กลับ รร นอนจ้า",
+     "note": "เดินไปที่ metro exit3 แล้วเรียก didi",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "迪士尼地铁站3号口"
+    }
+   ]
+  },
+  {
+   "id": "d4",
+   "title": "วัดหลงหัว · Wukang · Xintiandi · The Bund",
+   "items": [
+    {
+     "id": "i31",
+     "time": "08:00",
+     "title": "วัดหลงหัว",
+     "note": "📍Longhua temple\n⏰ 07:00-16:30\n*** เด่นเรื่อง งาน เงินโชคลาภ\n🍜 เมนูเด็ด บะหมี่เจ ราคาชามละ15¥ เครื่องเคียง(หน่อไม้+เป็ดเจ)จานละ 10¥\n*** ร้านอาหารอยู่ด้านหลังวัดที่คนต่อแถวเยอะๆ\n📸 สวนบอนไซในวัดสวยต้องไปดู น่าจะอยู่ท้ายวัดมั้ง\n🙏🏻วิธีมูดูในลิ้ง ตต ที่แปะข้างหลัง",
+     "amap": "https://surl.amap.com/3y5nbDJHj9QT",
+     "tiktok": "https://vt.tiktok.com/ZSmvAugUD/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "龙华寺"
+    },
+    {
+     "id": "i32",
+     "time": "09:30",
+     "title": "Wukang Mansion",
+     "note": "📍Wukang Building\n*** จุดถ่ายรูปยอดฮิตของชาว ตต\n🚶‍♂️เดินเล่นยาวๆที่ Wukang road\n***วิวดีมู้ดดีถ่ายรูปสวย เดินไปจนถึง Anfu road",
+     "amap": "https://surl.amap.com/3vVUcoDLDbzn",
+     "tiktok": "https://vt.tiktok.com/ZSmvDYung/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "武康大楼"
+    },
+    {
+     "id": "i33",
+     "time": "",
+     "title": "The Matchatokyo",
+     "note": "🚶‍♂️อยู่บนถนน Wukang ***คนบอกมัทฉะอร่อยม้าก 🍦เจตอยากอีสไอติม",
+     "amap": "https://surl.amap.com/5FpPrlURqc3C",
+     "tiktok": "https://vt.tiktok.com/ZSmvbFLxB/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "The Matcha Tokyo(武康路店)"
+    },
+    {
+     "id": "i34",
+     "time": "",
+     "title": "เดินเล่น Anfu road",
+     "note": "🚶‍♂️เดินจาก Wukang Mansion ได้เนื่องจากถนนอยู่ข้างๆกัน\n*** แต่แอบไกลอยู่นะประมาณ 1โล ถ้าไม่ไหวปั่นจักรยานเถอะแม่",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "安福路"
+    },
+    {
+     "id": "i35",
+     "time": "",
+     "title": "13DE Marzo ค่าเฟ่หมี",
+     "note": "*** สั่งล่วงหน้าที่ Alipay แล้วค่อยไปรับหน้าร้าน สแกน qr ใน alipay",
+     "amap": "https://surl.amap.com/Ajd06DH199QX",
+     "tiktok": "https://vt.tiktok.com/ZSmvyqv2t/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "13DE MARZO(安福路店)"
+    },
+    {
+     "id": "i36",
+     "time": "",
+     "title": "Wiggle Wiggle",
+     "note": "📍อยู่ข้างๆร้าน 13DE เลยจ้า\n*** ร้านมี4ชั้น มุมถ่ายรูปเยอะ ของน่ารัก",
+     "amap": "https://surl.amap.com/1OCSfO8F1keAC",
+     "tiktok": "https://vt.tiktok.com/ZSmvPtnvN/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "Wiggle Wiggle(安福路店)"
+    },
+    {
+     "id": "i37",
+     "time": "",
+     "title": "Marsmart pet",
+     "note": "📍ร้านอยู่ข้างๆ wiggle ***ของฝากหม๋าหม๋า",
+     "amap": "https://surl.amap.com/3xxsXs1gAw",
+     "tiktok": "https://vt.tiktok.com/ZSu8QNkN3/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "MARSMART(安福路店)"
+    },
+    {
+     "id": "i38",
+     "time": "",
+     "title": "Qingzhi ร้านแฮนครีม",
+     "note": "แฮนครีม ของฝากยอดฮิต\n*** สามารถขอถุงเล็กๆเพิ่มได้ จะได้ใส่ของให้เป็นของฝากแต่ละคน มีหลายคอลเลคชั่นให้เลือก ทั้งตามวันเกิด ราศี อะไรประมาณนี้",
+     "amap": "https://surl.amap.com/3yXTZVnzH6ny",
+     "tiktok": "https://vt.tiktok.com/ZSmvQ2DBj/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "倾栀(安福路店)"
+    },
+    {
+     "id": "i39",
+     "time": "",
+     "title": "Tagi",
+     "note": "ร้านขายของกระจุ๊กกระจิก ของน่ารัก แต่ราคาก็แรงอยู่ มีพวกเคสโทรศัพท์ กระเป๋า และอื่นๆ",
+     "amap": "https://surl.amap.com/4krFnmYFI0X0",
+     "tiktok": "https://vt.tiktok.com/ZSmv559up/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "Tagi.(安福路店)"
+    },
+    {
+     "id": "i40",
+     "time": "",
+     "title": "รับประทานอาหารกลางวัน ร้านเชฟเฟย",
+     "note": "📍Xintiandi Plaza ร้านอยู่ชั้น4\n***เมนูที่สั่งทุกโต๊ะจะมี หมูผัดพริกหยวก กับเนื้อผัดน้ำมันพริก\n*** ชามะนาวแก้วใหญ่ชิบหายแนะนำให้สั่ง1แก้วกิน2คน\n***ข้าวคนละ 5¥  เติมได้ไม่อั้นจ้า",
+     "amap": "https://surl.amap.com/1QKjnz8j3ja",
+     "tiktok": "https://vt.tiktok.com/ZSmvXunt7/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "费大厨辣椒炒肉(新天地广场店)"
+    },
+    {
+     "id": "i41",
+     "time": "",
+     "title": "เดินเล่นย่าน Xiantiandi",
+     "note": "เป็นถนนยาวๆมีร้านค้ามากมาย\n***ร้านขนมที่เคยกินในวันก่อนๆแล้วมีที่นี่\n- Newyork Bagelous Museam\n- Butterful & Creamorous",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海新天地"
+    },
+    {
+     "id": "i42",
+     "time": "",
+     "title": "Gentle Monster",
+     "note": "เข้าไปถ่ายรูป เช็คอินเกร๋ๆ",
+     "amap": "https://surl.amap.com/UpvWRsReHH",
+     "tiktok": "https://vt.tiktok.com/ZSud1TJnD/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "HAUS SHANGHAI(淮海中路店)"
+    },
+    {
+     "id": "i43",
+     "time": "",
+     "title": "Bao's pastry",
+     "note": "📍เดินจาก Gentle monster 180m (3min) 🍡ขนมปังไก่หยองร้านดัง ***ราคา 38¥ /500g ***กล่อง8ลูก ราคา33-34¥",
+     "amap": "https://surl.amap.com/3GSEykKl1dgna",
+     "tiktok": "https://vt.tiktok.com/ZSu8CL8Ux/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "鲍师傅糕点"
+    },
+    {
+     "id": "i44",
+     "time": "",
+     "title": "กิน New sukiyaki",
+     "note": "📍Huaihai 755\n***ร้านอยู่ชั้น3",
+     "amap": "https://surl.amap.com/2VAWEAe91hgDi",
+     "tiktok": "https://vt.tiktok.com/ZSud1yxPm/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "牛纽寿喜烧(淮海755店)"
+    },
+    {
+     "id": "i45",
+     "time": "",
+     "title": "เดินเล่น The Bund",
+     "note": "📍Customer house (หอนาฬิกา)\n***ไฟปิด 22:00",
+     "amap": "https://surl.amap.com/irYLRam2896",
+     "tiktok": "https://vt.tiktok.com/ZSud1asXf/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "上海外滩 海关大楼"
+    }
+   ]
+  },
+  {
+   "id": "d5",
+   "title": "ช้อปของฝาก · บินกลับ",
+   "items": [
+    {
+     "id": "i46",
+     "time": "09:45",
+     "title": "เช็คเอ้า รร.",
+     "note": "",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "唯庭R酒店(南京路步行街人民广场站店)"
+    },
+    {
+     "id": "i47",
+     "time": "10:30",
+     "title": "กินข้าวร้าน Grandma's home",
+     "note": "📍ห้าง Joy city ชั้น7",
+     "amap": "https://surl.amap.com/4zA57vklray3",
+     "tiktok": "https://vt.tiktok.com/ZSuLE9Akf/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "外婆家(静安大悦城店)"
+    },
+    {
+     "id": "i48",
+     "time": "",
+     "title": "เดินดูของที่ Joy City",
+     "note": "มีของขายเยอะแยะ เสื้อผ้า คสอ กิ๊ฟช็อป ไรงี้ เดินดูเผื่อได้ของฝากรึไร เป็นห้างที่ของเยอะม้าก",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "静安大悦城"
+    },
+    {
+     "id": "i49",
+     "time": "",
+     "title": "Holilland",
+     "note": "แวะซื้อชีสเค้กของฝาก ***ให้ร้านใส่ถุงเย็น+เจลเย็นให้ได้ แต่น่าจะต้องเสียเงินเพิ่ม  *** ราคากล่องละ 39-40¥ (180บาท) ***เก็บได้ 5 วันนะจ้ะ",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "好利来(静安大悦城店)"
+    },
+    {
+     "id": "i50",
+     "time": "",
+     "title": "Grace",
+     "note": "ทาร์ตไข่เจ้าดัง 🚶‍♂️เดินจาก holiland 500m (7min) 📍ร้านอยู่ชั้น2 ใน ifc mall***พั้นอยากแวะซื้อกลับไทย",
+     "amap": "https://surl.amap.com/4bMobk1o7I5",
+     "tiktok": "https://vt.tiktok.com/ZSu8XycVf/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "GRACE BAKERY(上海国金中心店)"
+    },
+    {
+     "id": "i51",
+     "time": "",
+     "title": "เดิน Nanjing",
+     "note": "ซื้อของเก็บตก 🍡อยากแวะ Nut fun land ซื้อนูกัต",
+     "amap": "https://surl.amap.com/2oXQtzXn1d3M4",
+     "tiktok": "https://vt.tiktok.com/ZSuLKPchE/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "南京路步行街"
+    },
+    {
+     "id": "i52",
+     "time": "",
+     "title": "กินข้าวเช้าร้านข้าวแกง",
+     "note": "📍 Fanzhengxiang Sea Food Floor (Nanjing Road Pedestrian Street Branch)",
+     "amap": "https://surl.amap.com/4YcMjJUVMc9j",
+     "tiktok": "https://vt.tiktok.com/ZSu8H9sGw/",
+     "extraLinks": [],
+     "done": false,
+     "cn": "范正香·上海点心·海鲜面(南京东路店)"
+    },
+    {
+     "id": "i53",
+     "time": "17:00",
+     "title": "เรียกแท้กซี่ไป สนบ",
+     "note": "เรียกรถจาก trip ประมาณ1400 ***จริงๆเรียก didi น่าจะถูกกว่าจองรถใน trip",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "浦东国际机场T1航站楼"
+    },
+    {
+     "id": "i54",
+     "time": "18:30",
+     "title": "ถึงสนามบินผูตง (PVG) เช็คอิน + ทำ Tax refund",
+     "note": "เคาน์เตอร์ China Eastern เปิดประมาณ 3 ชม. ก่อนเครื่องออก",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "浦东国际机场T1航站楼"
+    },
+    {
+     "id": "i59",
+     "time": "21:10",
+     "title": "✈️ บินกลับกรุงเทพฯ (MU547)",
+     "note": "ถึงสุวรรณภูมิประมาณ 00:55 (+1) ของวันที่ 21 Dec",
+     "amap": "",
+     "tiktok": "",
+     "extraLinks": [],
+     "done": false,
+     "cn": "浦东国际机场T1航站楼"
+    }
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "id": "i3",
+   "time": "",
+   "title": "กินข้าวที่ maotou restaurant",
+   "note": "📍อยู่ตรงข้ามวัด Jing'an\n🍽️ เมนูเด็ดต้องสั่ง\n***สั่งกับแค่3-4อย่างพอนะ\n- ข้าวหน้าหมูตุ๋นทรัฟเฟิล\n- ข้าวผัดผักกาดดอง\n- ไข่ห่อกุ้งทอด\n- เนื้อทอดไข่เค็ม\n- เนื้อซอสเปรี้ยวหวานกับแป้งโมจิ\n🍡 โมจิซอสงา อร่อยต้องกิน",
+   "amap": "https://surl.amap.com/hcXMidM1qgZ2",
+   "tiktok": "https://vt.tiktok.com/ZSmXfbkgb/",
+   "extraLinks": [],
+   "done": false,
+   "cn": "毛头小食(静安寺店)"
+  },
+  {
+   "id": "i4",
+   "time": "",
+   "title": "ไปมูที่ Jing'an Temple",
+   "note": "ขึ้นชื่อเรื่องการงาน และโชคลาภ ปังมากมีคนกลับไทยเเล้วถูกหวยบ่อยมาก\n- ค่าเข้าวัด 50¥\n- ค่าธูป 10¥\n*** พกเหรียญจากไทยมาเยอะๆ เอาไว้โยนเข้าหอระฆังมคนจีนมีความเชื่อว่าถ้าโยนเข้าพรที่ขอไปจะสมหวัง",
+   "amap": "https://surl.amap.com/gZHP0GO149Tf",
+   "tiktok": "https://www.tiktok.com/@the.jiiib/video/7542135558613503240?q=jing%20an%20buddhist%20temple&t=1771253310843",
+   "extraLinks": [],
+   "done": false,
+   "cn": "静安寺"
+  },
+  {
+   "id": "i7",
+   "time": "",
+   "title": "Starbucks Coffee Zhenxuan (Shanghai Torrefaction Workshop)",
+   "note": "🚶‍♂️เดินจาก B&C มาได้อยู่ใกล้ๆ *** แวะถ่ายรูปลงสตอรี่ เดินดูโรงคั่วกาแฟชิวๆ",
+   "amap": "https://surl.amap.com/1Yl1wNbzBgqf",
+   "tiktok": "https://vt.tiktok.com/ZSuYqe4t7/",
+   "extraLinks": [],
+   "done": false,
+   "cn": "星巴克臻选上海烘焙工坊"
+  },
+  {
+   "id": "i8",
+   "time": "",
+   "title": "LOUIS VUITTON Feifan Zhilv Exhibition",
+   "note": "🚶‍♂️เดินจาก Starbuck มาได้ ***แวะถ่ายรูปลงสตอรี่",
+   "amap": "https://surl.amap.com/2DVTtdz1u3pU",
+   "tiktok": "https://vt.tiktok.com/ZSuYVXs5G/",
+   "extraLinks": [],
+   "done": false,
+   "cn": "路易威登 非凡之旅"
+  },
+  {
+   "id": "i9",
+   "time": "",
+   "title": "Yuyuan Garden (อวี้หยวน)",
+   "note": "📍ปักหมุดไปที่ Yuyuan garden shopping mall (gate2)\n🥟 Nanxiang Steamed Bun Restaurant (เสี่ยวหลงเปาหลอดดูด)\n🍡โมจิครีมชีสที่อยู่ตรงข้าม mcdonal's ร้านเล็ก (gate7)",
+   "amap": "https://surl.amap.com/1MOXGl4108V1",
+   "tiktok": "https://www.tiktok.com/@dg_travel/video/7512777985037012246?q=Yuyuan%20Garden&t=1771169946474",
+   "extraLinks": [],
+   "done": false,
+   "cn": "豫园商城(2号门)"
+  }
+ ],
+ "budget": [
+  {
+   "id": "b1",
+   "label": "ตั๋วเครื่องบิน",
+   "amount": 0
+  },
+  {
+   "id": "b2",
+   "label": "โรงแรม",
+   "amount": 0
+  },
+  {
+   "id": "b3",
+   "label": "ตั๋วเข้า Disney + Photopass",
+   "amount": 0
+  },
+  {
+   "id": "b4",
+   "label": "ตั๋ว Early entry Disney",
+   "amount": 0
+  },
+  {
+   "id": "b5",
+   "label": "ค่ารถเข้าเมือง Maglev + Metro",
+   "amount": 0
+  },
+  {
+   "id": "b6",
+   "label": "ประกันการเดินทาง",
+   "amount": 0
+  },
+  {
+   "id": "b7",
+   "label": "eSIM",
+   "amount": 0
+  }
+ ],
+ "expenses": [],
+ "tips": [
+  {
+   "id": "t1",
+   "title": "ซื้อ eSIM",
+   "text": "ซื้อผ่าน Trip.com",
+   "link": "https://th.trip.com/things-to-do/detail/49254037?locale=th-TH&curr=THB"
+  },
+  {
+   "id": "t2",
+   "title": "วิธีติดตั้ง eSIM",
+   "text": "*** ต้องปิด location ใน TikTok + ปิดการติดตาม IP ในตั้งค่า iPhone ด้วย\n*** ต้องทำตั้งแต่ที่ไทยเท่านั้น ทั้งติดตั้ง eSIM และปิด location",
+   "link": "https://vt.tiktok.com/ZSmrp5MgM/"
+  },
+  {
+   "id": "t3",
+   "title": "Activate eSIM เมื่อถึงจีน",
+   "text": "",
+   "link": "https://vt.tiktok.com/ZSmrWS1QG/"
+  },
+  {
+   "id": "t4",
+   "title": "ประกันการเดินทาง",
+   "text": "ซื้อผ่าน Heygoody",
+   "link": ""
+  },
+  {
+   "id": "t5",
+   "title": "วิธีกรอกใบ ตม. ออนไลน์",
+   "text": "*** กรอกล่วงหน้า 3-7 วัน",
+   "link": "https://vt.tiktok.com/ZSmrtkha7/"
+  },
+  {
+   "id": "t6",
+   "title": "แอปที่ต้องมี",
+   "text": "Alipay / WeChat Pay (ผูกบัตร) · Didi · Amap (高德地图) · Trip.com · แอปแปลภาษา",
+   "link": ""
+  },
+  {
+   "id": "t7",
+   "title": "อากาศเดือนธันวาคม",
+   "text": "เซี่ยงไฮ้ช่วงกลาง ธ.ค. ประมาณ 3-10°C ลมแรง เตรียมเสื้อกันหนาว/ฮีทเทค/ถุงมือ\n*** ไฟตึกฝั่ง Lujiazui อาจปิดเร็วขึ้น (21:00) ถ้าอากาศหนาว",
+   "link": ""
+  }
+ ]
+};
